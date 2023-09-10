@@ -3,9 +3,10 @@
 
 <head>
     <title>Ishaan - Developer Portfolio </title>
+    <script src="https://kit.fontawesome.com/29ea254db9.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -17,12 +18,13 @@
             color: white;
             font-family: 'Poppins', sans-serif;
         }
-        header{
+
+        header {
             position: sticky;
             top: 0;
             z-index: 999;
         }
-        
+
 
         nav {
             display: flex;
@@ -31,7 +33,7 @@
             height: 60px;
             background-color: rgb(34, 34, 73);
         }
-        
+
 
         nav ul {
             display: flex;
@@ -55,7 +57,9 @@
         }
 
         .left {
-            font-size: 1.5rem;
+            font-size: 3rem;
+            font-family: 'Caveat', cursive;
+            color: whitesmoke;
         }
 
         .firstSection {
@@ -73,30 +77,17 @@
             margin: 40px 0;
 
         }
-        .leftSection .buttons{
-            position: relative;
-            padding: 25px;
-            left:-25px;
-        }
-
-        .leftSection .btn {
-            padding: 12px;
-            background-color: #22224f;
-            color: white;
-            border: 2px solid white;
-            border-radius: 8px;
-            font-size: 20px;
-            cursor: pointer;
-
-        }
-
         .rightSection img {
-            width: 95%;
-
+            width: 100%;
+            position: relative;
+            top: 20px;
+            left: -60px;
         }
 
         .name {
             color: rgb(160, 97, 218);
+            font-family: 'Caveat', cursive;
+            font-size: 4rem;
         }
 
         .secondSection {
@@ -132,6 +123,7 @@
             color: rgb(160, 97, 218);
             margin: 30px 84px;
         }
+
 
         .secondSection h1 {
             font-size: 1.9rem;
@@ -184,9 +176,71 @@
         footer>div {
             width: 350px;
         }
-        .footer-first{
+
+        .footer-first {
             position: relative;
             left: -87px;
+        }
+
+        .social-links {
+            display: flex;
+            margin: auto;
+            width: 50%;
+        }
+
+        .social-links a {
+            width: 80px;
+            height: 80px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            box-shadow: 0 0 20px 10px rgba(254, 161, 102, 0.1);
+            margin: 0 30px;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.5s;
+        }
+
+        .social-links a .fa-brands {
+            font-size: 30px;
+            line-height: 80px;
+            position: relative;
+            z-index: 10;
+            transition: color 0.5s;
+        }
+
+        .social-links a::after {
+            content: '';
+            width: 100px;
+            height: 100%;
+            top: -90px;
+            left: 0;
+            background: linear-gradient(-45deg, #4ecdc4, white);
+            position: absolute;
+            transition: 0.5s;
+        }
+
+        .social-links a:hover::after {
+            top: 0;
+        }
+
+        .social-links a:hover .fa-brands {
+            color: black;
+        }
+
+        .social-links a:hover {
+            transform: translateY(-10px);
+        }
+
+        .social h1 {
+            font-size: 1.9rem;
+            position: relative;
+            margin: 35px 153px;
+
+        }
+        .red{
+            color: red;
         }
     </style>
 </head>
@@ -194,12 +248,12 @@
 <body>
     <header>
         <nav>
-            <div class="left">Ishaan's Portfolio</div>
+            <div class="left">ISHAA<span class="red">N.</span></div>
             <div class="right">
                 <ul>
-                    <li><a href="/">Home</a></li>
+                    <li><a href="Index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="/">Projects</a></li>
+                    <li><a href="certificate.html">Certificates</a></li>
                     <li><a href="contact.html">Contact Me</a></li>
                 </ul>
             </div>
@@ -212,13 +266,21 @@
                 Hello, I am <span class="name">Ishaan</span>
                 <div> I am a </div>
                 <span id="element"></span>
-                <div class="buttons">
-                    <button class="btn" >Downlaod Resume</button>
-                    <button class="btn" onclick="window.location.href = 'https://github.com/IshaanShokeen';">Visit Github</button>  
-                </div>
+
             </div>
             <div class="rightSection">
                 <img src="bg.jpg">
+            </div>
+        </section>
+        <hr>
+        <section class="social">
+            <h1>My Social Networks</h1>
+            <div class="social-links">
+                <a href="https://www.instagram.com/ishaanshokeen/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/IshaanShokeen" target="_blank"> <i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ishaan-shokeen-a69127260/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100069933222266" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/ShokeenIshaan" target="_blank"><i class="fa-brands fa-twitter"></i></a>
             </div>
         </section>
         <hr>
@@ -256,10 +318,10 @@
             </div>
             <div class="footer-second"></div>
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/">About</a></li>
-                <li><a href="/">Projects</a></li>
-                <li><a href="/">Contact Me</a></li>
+                <li><a href="Index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="certificate.html">Certificates</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
             </ul>
             <div class="footer-third"></div>
             <div class="footer-fourth"></div>
@@ -277,6 +339,7 @@
             loopCount: Infinity,
         });
     </script>
+
 </body>
 
 </html>
