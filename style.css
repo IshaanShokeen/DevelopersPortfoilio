@@ -47,8 +47,14 @@ nav ul li a:hover {
 }
 
 .left {
-    font-size: 1.5rem;
-    color: white;
+    font-size: 3rem;
+    font-family: 'Caveat', cursive;
+    color:whitesmoke;
+}
+.left .red{
+    font-size: 3rem;
+    font-family: 'Caveat', cursive;
+    color: red;
 }
 
 .container{
@@ -188,3 +194,17 @@ footer>div {
     position: relative;
     left: -87px;
 }
+.btn2{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    color: white;
+    background-color: red;
+    padding: 14px 50px;
+    cursor: pointer;
+    border-radius: 6px;
+    position: relative;
+    top:-20px;
+}
+
